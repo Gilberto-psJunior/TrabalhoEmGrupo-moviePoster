@@ -32,6 +32,8 @@ body {
 #title {
   height: 250px;
   animation: title 5s infinite linear;
+ filter: drop-shadow;
+ filter: drop-shadow(0px 08px 0px rgba(0 0 0 / 90%));
 }
 
 #pedra-1 {
