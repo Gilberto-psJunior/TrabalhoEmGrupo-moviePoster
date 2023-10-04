@@ -128,48 +128,159 @@ body {
   }
 }
 
-.inMore {
-  display: flex;
+.container-button {
   margin-top: 12px;
+  display: flex;
   gap: 8%;
 }
 
 .btnModal {
-  width: 200px;
-  opacity: 90%;
-  text-decoration: none;
-  font-size: 16px;
-  color: #eeeded;
-  background: url(../img/background.png);
+  width: 220px;
+  height: 50px;
   border: none;
-  padding: 5px;
   border-radius: 10px;
-  transition: 0.8s;
+  outline: none;
+  color: #d71313;
+  background: #111;
+  cursor: pointer;
+  position: relative;
 }
 
-.btnModal:hover {
-  -webkit-filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
-  filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
-  color: #d71313;
+.btnModal:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btnModal:active:after {
+  background: transparent;
+}
+
+.btnModal:hover:before {
+  opacity: 1;
+}
+
+.btnModal:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .btnInfo {
-  width: 200px;
-  opacity: 90%;
-  text-decoration: none;
-  font-size: 16px;
-  color: #eeeded;
-  background: url(../img/background.png);
+  width: 220px;
+  height: 50px;
   border: none;
-  padding: 5px;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
   border-radius: 10px;
-  transition: 0.8s;
 }
 
-.btnInfo:hover {
-  -webkit-filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
-  filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
-  color: #d71313;
+.btnInfo:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btnInfo:active {
+  color: #000;
+}
+
+.btnInfo:active:after {
+  background: transparent;
+}
+
+.btnInfo:hover:before {
+  opacity: 1;
+}
+
+.btnInfo:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .container-modal {
