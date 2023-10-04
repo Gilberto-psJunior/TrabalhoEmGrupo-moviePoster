@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpiderMan In Verse - Poster Movie</title>
+    <title>SpiderMan Into The Spider-Verse - Poster Movie</title>
     <link rel="shortcut icon" href="./img/fiveicon2.png" type="image/x-icon" />
 
     <!-- CSS -->
@@ -27,7 +27,7 @@
     <script src="./src/index.js" defer></script>
   </head>
   <body>
-    <dialog>
+    <dialog class="modal1">
       <iframe
         width="900"
         height="515"
@@ -38,7 +38,50 @@
         allowfullscreen
       ></iframe>
       <br /><br />
-      <button>Close</button>
+      <button id="close1">Close</button>
+    </dialog>
+
+    <dialog class="modal2">
+      <div class="container-modal2">
+        <div class="element"></div>
+        <h1>ABOUT</h1>
+      </div>
+      <div class="content-text">
+        <img
+          src="https://m.media-amazon.com/images/I/91F2HZa97jL._SL1500_.jpg"
+          alt="poster spiderman"
+        />
+        <div class="text">
+          <h3>SPIDER-MAN™: INTO THE SPIDER-VERSE</h3>
+          <h6>ANIMATION, ACTION, SUPERHERO, FAMILY</h6>
+          <p>
+            Phil Lord and Christopher Miller, the creative minds behind The Lego
+            Movie and 21 Jump Street, bring their unique talents to a fresh
+            vision of a different Spider-Man Universe, with a groundbreaking
+            visual style that`s the first of its kind. Spider-Man: Into the
+            Spider-Verse introduces Brooklyn teen Miles Morales, and the
+            limitless possibilities of the Spider-Verse, where more than one can
+            wear the mask.
+          </p>
+          <div class="container-image">
+            <img src="./img/logo-marvel-1536.png" alt="" />
+            <img
+              src="./img/sony_pictures_animation__logo_fan_made__by_pependejo_dcuyuhx-fullview.png"
+              alt=""
+            />
+            <img
+              src="./img/142-1425623_columbia-pictures-logo-png-columbia-pictures-a-sony.png"
+              alt=""
+            />
+          </div>
+          <small
+            >© 2019 Sony Pictures Animation Inc. All Rights Reserved. | MARVEL
+            and all related character names: © & ™ 2019 MARVEL.</small
+          >
+        </div>
+      </div>
+      <br /><br />
+      <button id="close2">Close</button>
     </dialog>
 
     <div class="container-main">
@@ -53,10 +96,16 @@
       <img class="stone" id="stone-3" src="img/stone3.png" alt="" />
       <div class="inMore">
         <input
-          type="submit"
-          id="myModal"
+          type="button"
+          id="trailer"
           class="btnModal"
           value="Watch the trailer now"
+        />
+        <input
+          type="button"
+          id="info"
+          class="btnInfo"
+          value="More information"
         />
       </div>
     </div>

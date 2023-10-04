@@ -1,11 +1,23 @@
-const myModal = document.getElementById("myModal");
-const modal = document.querySelector("dialog");
-const buttonClose = document.querySelector("dialog button");
+const btnModal1 = document.getElementById("trailer");
+const modal1 = document.querySelector(".modal1");
+const buttonClose = document.getElementById("close1");
+const buttonClose2 = document.getElementById("close2");
 
-myModal.addEventListener("click", () => {
-  modal.showModal();
+const btnInfo = document.getElementById("info");
+const modal2 = document.querySelector(".modal2");
+
+btnModal1.addEventListener("click", () => {
+  modal1.showModal();
 });
 
 buttonClose.addEventListener("click", () => {
-  modal.close();
+  modal1.close();
+});
+
+btnInfo.addEventListener("click", () => {
+  modal2.showModal();
+});
+
+buttonClose2.addEventListener("click", () => {
+  modal2.close();
 });

@@ -129,7 +129,9 @@ body {
 }
 
 .inMore {
+  display: flex;
   margin-top: 12px;
+  gap: 8%;
 }
 
 .btnModal {
@@ -151,6 +153,25 @@ body {
   color: #d71313;
 }
 
+.btnInfo {
+  width: 200px;
+  opacity: 90%;
+  text-decoration: none;
+  font-size: 16px;
+  color: #eeeded;
+  background: url(../img/background.png);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+
+.btnInfo:hover {
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
+  filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
+  color: #d71313;
+}
+
 .container-modal {
   display: flex;
   justify-content: center;
@@ -162,7 +183,7 @@ dialog::backdrop {
 }
 
 dialog {
-  margin: 100px auto;
+  margin: auto;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -190,4 +211,56 @@ dialog button {
   padding: 5px;
   border-radius: 10px;
   transition: 0.8s;
+}
+
+.container-modal2 {
+  display: flex;
+  gap: 10px;
+}
+
+.element {
+  width: 10px;
+  height: 45px;
+  background-color: #d71313;
+}
+
+.modal2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.modal2 img {
+  border-radius: 10px;
+  width: 300px;
+  margin-left: 50px;
+}
+
+.content-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5%;
+}
+
+.text {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.text small {
+  font-size: 10px;
+  text-align: center;
+}
+
+.container-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-image img {
+  width: 100px;
 }
