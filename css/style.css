@@ -133,15 +133,17 @@ body {
   display: flex;
   gap: 8%;
 }
-
+.containerHide{
+  display: none;
+}
 .btnModal {
   width: 220px;
   height: 50px;
   border: none;
+  font-weight: bolder;
   border-radius: 10px;
   outline: none;
   color: #d71313;
-  font-weight:bolder;
   background: #111;
   cursor: pointer;
   position: relative;
@@ -217,8 +219,8 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 0;
-   font-weight:bolder;
   border-radius: 10px;
+  font-weight: bolder;
 }
 
 .btnInfo:before {
@@ -373,7 +375,135 @@ dialog button {
   justify-content: center;
   align-items: center;
 }
-
+body{
+  max-height: 100vh;
+}
 .container-image img {
   width: 100px;
 }
+@media (max-width: 568px){
+  .container-main {
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  body{
+    overflow-y: auto;
+  }
+  #miles {
+    height: 350px;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(9 9 9 / 100%));
+    filter: drop-shadow(0px 0px 20px rgba(9 9 9 / 100%));
+    animation: miles 40s infinite linear;
+  }
+  
+  #title {
+    height: 160px;
+    animation: title 5s infinite linear;
+    filter: drop-shadow;
+    filter: drop-shadow(0px 08px 0px rgba(0 0 0 / 90%));
+  }
+  .close{
+    width: 200px;
+    opacity: 90%;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
+    filter: drop-shadow(0px 0px 20px rgba(255 0 0 / 100%));
+    text-decoration: none;
+    font-size: 16px;
+    color: #eeeded;
+    background-color: #d71313;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.8s;
+  }
+  .reveal{
+    width: 200px;
+    opacity: 90%;
+    text-decoration: none;
+    font-size: 16px;
+    color: #eeeded;
+    background: url(../img/background.png);
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.8s;
+  }
+  #stone-1 {
+    position: absolute;
+    top: -20px;
+    left: -1200px;
+    height: 600px;
+    transform: rotate(180deg);
+    animation: mediarock1 30s infinite 5s linear;
+    z-index: -1;
+  }
+  
+  #stone-2 {
+    position: absolute;
+    top: -100px;
+    left: -1300px;
+    height: 600px;
+    transform: rotate(100deg);
+    animation: mediarock1 30s infinite 12s linear;
+    z-index: -1;
+  }
+  
+  #stone-3 {
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(9 9 9 / 100%));
+    filter: drop-shadow(0px 0px 20px rgba(9 9 9 / 100%));
+    animation: miles 5s infinite linear;
+  
+    position: absolute;
+    top: 10%;
+    left: -1200;
+    height: 800px;
+    animation: mediarock 30s infinite linear;
+    z-index: -1;
+  }
+  
+ 
+
+  @keyframes mediarock {
+    from {
+      left: -800px;
+    }
+    to{
+      left: 100%;
+    }
+  }
+  
+  @keyframes mediarock1 {
+    from {
+      left: -800px;
+    }
+    to{
+      left: 100%;
+    }
+  }
+  .btnInfo{
+    display: none;
+  }
+
+  .btnModal{
+    display: none;
+  }
+.containerHide{
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+.containerHide h1{
+ background-image: url(../img/minimalistic-illustration-of-spider-web-ai-generated_731790-12886.webp);
+  font-weight: bolder;
+  color: #f2efef;
+ text-shadow: rgb(105, 95, 95) 0px 2px 0px;
+}
+}
+
+
