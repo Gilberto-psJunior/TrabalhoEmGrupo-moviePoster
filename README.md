@@ -30,8 +30,10 @@ Este projeto foi desenvolvido em grupo para fins educacionais e práticos.
 - [Lucas Santos](https://github.com/LucasFerreiraSantos)
 
 
-> (Você pode preencher os nomes dos colegas, se quiser dar crédito completo ao grupo)
-
 ---
 
-## 📦 Como
+## 📦 Como rodar o projeto localmente
+
+```bash
+git clone https://github.com/Gilberto-psJunior/TrabalhoEmGrupo-moviePoster.git
+cd TrabalhoEmGrupo-moviePoster
