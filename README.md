@@ -18,7 +18,7 @@ Utilizamos HTML, CSS e JavaScript para montar uma página visualmente agradável
 
 > 🎬 Galeria de pôsteres em exibição
 
-![Preview do Movie Poster](./img/poster-preview.jpg)
+![Preview do Movie Poster](./img/poster-preview.gif)
 
 ---
 
