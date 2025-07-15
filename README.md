@@ -27,8 +27,8 @@ Utilizamos HTML, CSS e JavaScript para montar uma página visualmente agradável
 Este projeto foi desenvolvido em grupo para fins educacionais e práticos.
 
 - [Gilberto Junior](https://github.com/Gilberto-psJunior)
-- [Nome do Integrante 2](https://github.com/usuario2)
-- [Nome do Integrante 3](https://github.com/usuario3)
+- [Lucas Santos](https://github.com/LucasFerreiraSantos)
+
 
 > (Você pode preencher os nomes dos colegas, se quiser dar crédito completo ao grupo)
 
